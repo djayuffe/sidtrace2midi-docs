@@ -4,6 +4,9 @@ SIDTrace2MIDI is an executable SID-register trace extractor and MIDI exporter.
 It runs enough of the C64 player environment to observe musical register writes
 and turn them into DAW-editable events.
 
+Choose this release when you need the most complete operator, architecture,
+troubleshooting, and release-process documentation.
+
 ## Extraction and emulation
 
 - PSID and RSID loading with ROM, banking, CIA, VIC, and IRQ support.

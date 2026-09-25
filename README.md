@@ -7,6 +7,17 @@ A self-contained **Commodore 64 SID → MIDI extraction toolkit** with a hardene
 
 For a concise capability overview, see [docs/FEATURES.md](docs/FEATURES.md).
 
+## Start here
+
+For one file, run:
+
+```sh
+python3 sidtrace2midi.py tune.sid --auto --seconds 600 --ppq 9600 -o tune.mid
+```
+
+For a guided first session, see `docs/tutorials/FIRST_30_MINUTES.md`; for
+batch operations, begin with `docs/steps/03_top100_batch_conversion.md`.
+
 This project is built for **SID player execution and MIDI conversion**. It is not a transistor-level C64 emulator. The design goal is to execute enough of the real SID init/play code to capture musically meaningful SID register writes and convert them into editable DAW MIDI: notes, pitch bend, pulse-width movement, filter movement, waveform changes, ADSR metadata, noise/drum extraction and timing.
 
 
