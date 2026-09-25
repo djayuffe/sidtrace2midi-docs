@@ -1,0 +1,9 @@
+CPU6502 opcode coverage
+handlers: 256/256
+official opcodes covered: 151/151
+jam opcodes: 02 12 22 32 42 52 62 72 92 B2 D2 F2
+strict/unstable opcodes: 8B 93 9B 9C 9E 9F AB BB
+page-cross penalty opcodes: 29
+diagnostics: last_opcode/last_pc/opcode_count/illegal_opcode_count/unstable_opcode_count/jam_count/brk_count/status()/trace_limit/deque/trace_total/clear_trace
+policy: official + common NMOS illegal opcodes implemented; KIL/JAM safely stops by default; strict_jam/strict_unstable can raise; decimal_flags nmos/binary/adjusted/strict
+6510 port: CPU-side $0000/$0001 latch + effective pull-up helper; optional intercept_6510_port wrapper with configurable host read/write side-effect mirroring; sid2midi C64 host consults it for banking
