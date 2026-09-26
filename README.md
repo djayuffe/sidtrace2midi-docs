@@ -1,5 +1,8 @@
 # SIDTrace2MIDI — Ultra Documentation Release
 
+Copyright © 2026 Ulf Bertilsson. Licensed under the
+[GNU General Public License v3.0 or later](LICENSE).
+
 
 > **New public name:** SIDTrace2MIDI.  The historical script `sid2midi.py` remains fully supported, and the new `sidtrace2midi.py` launcher is provided as a clearer entrypoint.  This tool is **SID → MIDI**, not `midi2sid`: it runs SID player code, traces SID chip register writes, then exports MIDI.
 

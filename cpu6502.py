@@ -1,5 +1,8 @@
 """MOS 6502 / 6510 CPU core for C64 SID-register extraction.
 
+Copyright (C) 2026 Ulf Bertilsson
+SPDX-License-Identifier: GPL-3.0-or-later
+
 This module is intentionally **instruction-level**, not transistor/per-PHI2
 Visual6502 emulation.  It is tuned for PSID/RSID playback calls inside
 ``sid2midi.py``: callback memory access, C64/6510 processor-port support, all
